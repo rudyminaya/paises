@@ -1,0 +1,155 @@
+/* ESTILOS GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+/* ESTILOS DEL TOP */
+.top {
+    background-color: #009cf3;
+    text-align: end;
+    padding: 0.5em 2em;
+    color: white;
+    font-weight: 600;
+}
+
+/*ESTILOS DEL HEADER */
+.headerNav {
+    display: flex;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: #0b2239;
+}
+
+.logo {
+    width: 3em;
+    margin-right: 0.5em;
+}
+
+.marcaNegativo {
+    font-weight: 600;
+    color: white;
+}
+
+/* ESTILOS DEL CONTENT */
+.content {
+    padding: 3em 10em;
+    line-height: 2rem;
+    color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    width: 7em;
+}
+
+.contentParrafo {
+    width: 50%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+/* ESTILOS DEL MAINCONTENT */
+
+.mainContenedor {
+    padding: 0 5em 5em 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: #0b2239;
+    justify-self: center;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 2em 1em;
+    color: white;
+    width: 350px;
+}
+
+.cardShadow {
+    background-color: #009cf3;
+    border-radius: 40px 100px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    padding: 0 2em;
+}
+
+.alphaCode {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: auto;
+    height: auto;
+    font-size: medium;
+    padding: 0.2em 0.5em;
+    border: solid 2px white;
+    border-radius: 3px;
+}
+
+.bandera {
+    width: 140px;
+    margin-top: 4.5em;
+    text-transform: uppercase;
+}
+
+.nombrePais {
+    font-size: xx-large;
+    margin: 0.5em 0 0 0;
+    text-align: center;
+}
+
+.parrafo {
+    font-size: large;
+    text-align: center;
+    margin: 0.5em 0;
+    line-height: 1.7rem;
+}
+
+.capitalPais {
+    font-size: x-large;
+    margin-bottom: 1.5em;
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    background-color: #0b2239;
+    padding: 5em;
+}
+
+.iconoGit {
+    font-size: 5rem;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    margin-top: 10px;
+    text-decoration: none;
+    transition-duration: 100ms;
+}
+
+.iconoGit:hover {
+    transform: scale(1.2);
+}
+
+/* ESTILOS DEL BOTTOM */
+.bottom {
+    text-align: center;
+    padding: 5px 0;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.493);
+}
