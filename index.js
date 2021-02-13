@@ -1,6 +1,5 @@
 const renderPaises = (paises) => {
     let paisesContent = document.getElementById('contenedor')
-    /* debemos ir de 12 a pais.length 60 */
     let valorFinal = Math.floor(Math.random() * (paises.length - 12) + 12)
     let valorInicial = valorFinal - 12
 
@@ -34,7 +33,7 @@ const renderPaises = (paises) => {
         shadow.appendChild(parrafo)
         nombreCapital.innerText = pais.capital
         shadow.appendChild(nombreCapital)
-        poblacion.innerText = `${pais.name} tiene una población que alcanza a ${pais.population} personas`
+        poblacion.innerText = `${pais.name} tiene una población aproximada de ${pais.population} personas`
         shadow.appendChild(poblacion)
         paisesContent.appendChild(card)
     })
@@ -47,18 +46,3 @@ const obtenerPaises = async () => {
 }
 
 obtenerPaises()
-
-{
-    /* <div class="card">
-    <div class="cardShadow">
-        <h5 class="alphaCode">PE</h5>
-        <img class="imagen" src="https://restcountries.eu/data/per.svg" />
-        <h3 class="nombrePais">Perú</h3>
-        <p class="parrafo">Su capital es:</p>
-        <h3 class="capitalPais">Lima</h3>
-        <p class="parrafo">
-            Perú tiene una población que alcanza los 83 millones de personas.
-        </p>
-    </div>
-</div> */
-}

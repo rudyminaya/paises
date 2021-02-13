@@ -5,51 +5,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Biblioteca de Países</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
         <!-- Inicializando la sección TOP -->
-        <section></section>
+        <section class="top">
+            La increíble lista de países de habla hispana
+        </section>
 
         <!-- Inicializando el Header -->
         <header>
             <nav class="headerNav">
                 <img class="logo" src="./assets/world.png" />
-                <h1 class="marca">Buscapaís</h1>
+                <h1 class="marcaNegativo">Buscapaís</h1>
             </nav>
         </header>
 
         <!-- Inicializando el Content -->
         <section class="content">
-            <p>
-                Buscapaís es una aplicación que le permitirá encontrar
-                información del país que uste desee. Tales como: capital,
-                población, bandera, etc. Podrás conocer más sobre todos los
-                países en el mundo y consultar las veces que desees de forma
-                gratuita. Aventúrate y descubre la información del mundo entero.
+            <img class="logo contentLogo" src="./assets/world.png" />
+            <h1 class="marca">Buscapaís</h1>
+            <p class="contentParrafo">
+                Buscapaís es una aplicación que te mostrará información
+                relevante sobre países de habla hispana. Todo esto en las
+                siguientes tarjetas donde te lo presentaremos de forma atractiva
             </p>
         </section>
 
         <!-- Inicializando el MainContent -->
         <main class="mainContenedor" id="contenedor">
-            <!-- <div class="card">
-                <div class="cardShadow">
-                    <h5 class="alphaCode">PE</h5>
-                    <img
-                        class="bandera"
-                        src="https://restcountries.eu/data/per.svg"
-                    />
-                    <h3 class="nombrePais">Perú</h3>
-                    <p class="parrafo">Su capital es:</p>
-                    <h3 class="capitalPais">Lima</h3>
-                    <p class="parrafo">
-                        Perú tiene una población que alcanza los 83 millones de
-                        personas.
-                    </p>
-                </div>
-            </div> -->
+            <!-- Aquí se inserta la función de Javascript para contener al listado de banderas -->
         </main>
-
+        <footer>
+            <p>
+                Si te gustó esta aplicación puedes dejar tu estrellita en mi
+                repositorio
+            </p>
+            <a
+                href="https://github.com/rudyminaya/paises"
+                class="fab fa-github iconoGit"
+            ></a>
+        </footer>
+        <div class="bottom">
+            <p>Diseñado y desarrollado por Rudy Minaya</p>
+        </div>
         <script type="text/javascript" src="./index.js"></script>
     </body>
 </html>

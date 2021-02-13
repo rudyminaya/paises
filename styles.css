@@ -5,6 +5,14 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
+/* ESTILOS DEL TOP */
+.top {
+    background-color: #009cf3;
+    text-align: end;
+    padding: 0.5em 2em;
+    color: white;
+    font-weight: 600;
+}
 
 /*ESTILOS DEL HEADER */
 .headerNav {
@@ -19,21 +27,35 @@
     margin-right: 0.5em;
 }
 
-.marca {
+.marcaNegativo {
     font-weight: 600;
     color: white;
 }
 
+/* ESTILOS DEL CONTENT */
 .content {
     padding: 3em 10em;
     line-height: 2rem;
     color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    width: 7em;
+}
+
+.contentParrafo {
+    width: 50%;
+    text-align: center;
+    margin: 1em auto;
 }
 
 /* ESTILOS DEL MAINCONTENT */
 
 .mainContenedor {
-    padding: 5em 5em;
+    padding: 0 5em 5em 5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -93,4 +115,41 @@
 .capitalPais {
     font-size: x-large;
     margin-bottom: 1.5em;
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    background-color: #0b2239;
+    padding: 5em;
+}
+
+.iconoGit {
+    font-size: 5rem;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    margin-top: 10px;
+    text-decoration: none;
+    transition-duration: 100ms;
+}
+
+.iconoGit:hover {
+    transform: scale(1.2);
+}
+
+/* ESTILOS DEL BOTTOM */
+.bottom {
+    text-align: center;
+    padding: 5px 0;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.493);
 }
