@@ -39,6 +39,10 @@ const renderPaises = (paises) => {
     })
 }
 
+const todos = (e) => {
+    console.log(e, 'funcionaaaa')
+}
+
 const obtenerPaises = async () => {
     fetch('https://restcountries.eu/rest/v2/lang/es')
         .then((res) => res.json())
